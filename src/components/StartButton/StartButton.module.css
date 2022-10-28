@@ -1,0 +1,43 @@
+.button {
+    width: 100px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.button_red {
+    border: 1px solid rgba(210, 25, 25, 0.5);
+    background-color: #d21919;
+}
+
+.button_red:hover {
+    background-color: rgba(210, 25, 25, 0.5);
+}
+
+.button_orange {
+    border: 1px solid rgba(210, 102, 25, 0.5);
+    background-color: #d27c19;
+}
+
+.button_orange:hover {
+    background-color: rgba(210, 102, 25, 0.5);
+}
+
+.button_blue {
+    border: 1px solid rgba(25, 118, 210, 0.5);
+    background-color: #1976c2;
+}
+
+.button_blue:hover {
+    background-color: rgba(25, 118, 210, 0.5);
+}
+
+.button_green {
+    border: 1px solid rgba(31, 210, 25, 0.5);
+    background-color: #5dc219;
+}
+
+.button_green:hover {
+    background-color: rgba(31, 210, 25, 0.5);
+}
