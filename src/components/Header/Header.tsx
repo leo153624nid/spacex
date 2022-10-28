@@ -1,14 +1,8 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import s from './Header.module.scss'
 
-interface HeaderProps {
-    order: number | null
-    garant: string | null
-    year: number | null
-    duration: number | null
-}
-
-function Header({ order, garant, year, duration }: HeaderProps) {
+function Header() {
     return (
         <header className={s.header}>
             <div className={s.banner}>
@@ -16,40 +10,28 @@ function Header({ order, garant, year, duration }: HeaderProps) {
             </div>
 
             <div className={s.content}>
-                <div className={s.avatar}>
-                    <img src={avatar} alt="avatar" />
+                <div className={s.text}>
+                    <span>Главная</span>
                 </div>
 
-                <div className={s.userData}>
-                    <div className={s.userName}>
-                        <span>{userName}</span>
-                    </div>
+                <div className={s.text}>
+                    <span>Технология</span>
+                </div>
 
-                    <div className={s.userButtons}>
-                        <div className={s.btn}>
-                            <div className={s.icon}>
-                                <img
-                                    src={email}
-                                    alt="email"
-                                    className={s.email}
-                                />
-                            </div>
+                <div className={s.text}>
+                    <span>График полетов</span>
+                </div>
 
-                            <span className={s.text}>Message</span>
-                        </div>
+                <div className={s.text}>
+                    <span>Гарантии</span>
+                </div>
 
-                        <div className={s.btn}>
-                            <div className={s.icon}>
-                                <img
-                                    src={phone}
-                                    alt="phone"
-                                    className={s.phone}
-                                />
-                            </div>
+                <div className={s.text}>
+                    <span>О компании</span>
+                </div>
 
-                            <span className={s.text}>Call</span>
-                        </div>
-                    </div>
+                <div className={s.text}>
+                    <span>Контакты</span>
                 </div>
             </div>
         </header>
