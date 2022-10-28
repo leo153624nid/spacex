@@ -1,25 +1,59 @@
-/* eslint-disable import/extensions */
-/* eslint-disable import/no-unresolved */
 import React from 'react'
-import s from './Card.module.scss'
+import s from './Body.module.scss'
 
-interface CardProps {
-    url: string
-    id: number
+interface BodyProps {
+    order: number | null
+    garant: string | null
+    year: number | null
+    duration: number | null
 }
 
-function Card({ url, id }: CardProps) {
+function Body({ order, garant, year, duration }: BodyProps) {
     return (
-        <div className={s.card}>
-            <img src={url} alt="" className={s.img} />
-
-            <div className={s.details}>
-                <div className={s.tittle}>id: {id}</div>
-
-                <div className={s.supportText}>none</div>
+        <header className={s.header}>
+            <div className={s.banner}>
+                <img src={banner} alt="banner" />
             </div>
-        </div>
+
+            <div className={s.content}>
+                <div className={s.avatar}>
+                    <img src={avatar} alt="avatar" />
+                </div>
+
+                <div className={s.userData}>
+                    <div className={s.userName}>
+                        <span>{userName}</span>
+                    </div>
+
+                    <div className={s.userButtons}>
+                        <div className={s.btn}>
+                            <div className={s.icon}>
+                                <img
+                                    src={email}
+                                    alt="email"
+                                    className={s.email}
+                                />
+                            </div>
+
+                            <span className={s.text}>Message</span>
+                        </div>
+
+                        <div className={s.btn}>
+                            <div className={s.icon}>
+                                <img
+                                    src={phone}
+                                    alt="phone"
+                                    className={s.phone}
+                                />
+                            </div>
+
+                            <span className={s.text}>Call</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     )
 }
 
-export default Card
+export default Body
