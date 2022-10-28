@@ -13,15 +13,15 @@ const DataAPI = {
         return axiosInstance.get(`data.json`).then((response) => response.data)
     },
     // Добавить или Обновить данные задачи
-    patchTask(updatedTask: Task) {
-        return axiosInstance.patch(`tasks/3.json`, {
-            ...updatedTask,
-        })
-    },
+    // patchTask(updatedTask: Task) {
+    //     return axiosInstance.patch(`tasks/3.json`, {
+    //         ...updatedTask,
+    //     })
+    // },
     // Удалить задачу
-    deleteTask() {
-        return axiosInstance.delete(`tasks/3.json`)
-    },
+    // deleteTask() {
+    //     return axiosInstance.delete(`tasks/3.json`)
+    // },
 }
 
 export default DataAPI
