@@ -5,11 +5,11 @@ import React from 'react'
 import s from './StartButton.module.scss'
 
 interface ButtonProps extends React.ComponentPropsWithRef<'button'> {
-    color: 'orange' | 'blue' | 'red' | 'green'
+    mode: 'newTrip' | 'home'
 }
 
-function StartButton({ children, color, onClick, ...props }: ButtonProps) {
-    const className = `${s.button} ${s[`button_${color}`]}`
+function StartButton({ children, mode, onClick, ...props }: ButtonProps) {
+    const className = `${s.button} ${s[`button_${mode}`]}`
 
     return (
         <button
