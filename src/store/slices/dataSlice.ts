@@ -9,10 +9,10 @@ export interface InitState {
 }
 
 const initialState: InitState = {
-    order: null,
-    garant: null,
-    year: null,
-    duration: null,
+    order: 1,
+    garant: '25%',
+    year: 2122,
+    duration: 597,
 }
 
 const dataSlice = createSlice({
