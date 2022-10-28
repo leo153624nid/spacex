@@ -3,6 +3,7 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import s from './Card.module.scss'
+import cardData from '../../common/cardData'
 
 interface CardProps {
     mode: 'order' | 'garant' | 'year' | 'duration'
@@ -10,11 +11,16 @@ interface CardProps {
 }
 
 function Card({ mode, data }: CardProps) {
+    // Определяем стили в зависимости от режима
     const className = `${s.card} ${s[`card_${mode}`]}`
+    // Определяем контекст каточки в зависимости от режима
+    const cardContex = cardData.find((item) => item.mode === mode)
 
     return (
         <div className={className}>
-            <span>{data}</span>
+            <p>{cardContex?.textOver}</p>
+            <p>{data}</p>
+            <p>{cardContex?.textUnder}</p>
         </div>
     )
 }
