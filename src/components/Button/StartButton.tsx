@@ -1,7 +1,8 @@
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
-import s from './StartButton.module.css'
+import s from './StartButton.module.scss'
 
 interface ButtonProps extends React.ComponentPropsWithRef<'button'> {
     color: 'orange' | 'blue' | 'red' | 'green'
