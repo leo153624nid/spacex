@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
@@ -14,7 +15,12 @@ function HomePage() {
     return order ? (
         <div className={s.homePage}>
             <Header />
-            <Body />
+            <Body
+                order={order}
+                garant={garant}
+                year={year}
+                duration={duration}
+            />
         </div>
     ) : (
         <div className={s.homePage}>
