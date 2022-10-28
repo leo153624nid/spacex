@@ -1,6 +1,12 @@
 @import './common/stylesConst.scss';
 
 .App {
-    text-align: center;
-    color: yellowgreen;
+    background: $color_backgrond;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
