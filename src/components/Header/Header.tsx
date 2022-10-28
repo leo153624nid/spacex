@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import s from './Header.module.scss'
+import banner from '../../img/banner.svg'
 
 function Header() {
     return (
