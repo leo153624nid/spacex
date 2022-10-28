@@ -1,11 +1,10 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
-
-import './App.css'
+import s from './App.module.scss'
 
 function App() {
     return (
-        <div className="App">
+        <div className={s.App}>
             <header className="App-header">
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
