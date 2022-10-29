@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import s from './Header.module.scss'
-import banner from '../../img/banner.svg'
+import logo from '../../img/spacex-logo.png'
 
 function Header() {
     return (
         <header className={s.header}>
             <div className={s.banner}>
-                <img src={banner} alt="banner" />
+                <img src={logo} alt="banner" />
             </div>
 
             <div className={s.content}>
