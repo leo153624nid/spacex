@@ -3,7 +3,7 @@
     padding: 8px 20px;
     cursor: pointer;
     color: white;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: transparent;
 }
 
 .button_newTrip {
@@ -11,16 +11,18 @@
     position: relative;
     left: 10vw;
     top: 30vh;
-}
 
-.button_newTrip:hover {
-    color: rgb(76, 36, 255);
+    &:hover {
+        color: rgb(76, 36, 255);
+    }
 }
 
 .button_home {
     border-image: url(../../img/button-border.png) 34% / 20px round;
-}
+    position: relative;
+    top: 10vh;
 
-.button_home:hover {
-    color: rgb(247, 163, 7);
+    &:hover {
+        color: rgb(247, 163, 7);
+    }
 }

@@ -1,14 +1,44 @@
 @import-normalize;
 @import './common/stylesConst.scss';
 
-@import url('https://rsms.me/inter/inter.css');
-html {
-    font-family: 'Inter', sans-serif;
+// @import url('https://rsms.me/inter/inter.css');
+// html {
+//     font-family: 'Inter', sans-serif;
+// }
+// @supports (font-variation-settings: normal) {
+//     html {
+//         font-family: 'Inter var', sans-serif;
+//     }
+// }
+@font-face {
+    font-family: 'MuseoSansCyrl-100';
+    src: url('./common/fonts/museosanscyrl-100.eot'); /* IE 9 Compatibility Mode */
+    src: url('./common/fonts/museosanscyrl-100.eot?#iefix')
+            format('embedded-opentype'),
+        /* IE < 9 */ url('./common/fonts/museosanscyrl-100.woff2')
+            format('woff2'),
+        /* Super Modern Browsers */ url('./common/fonts/museosanscyrl-100.woff')
+            format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+            url('./common/fonts/museosanscyrl-100.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('./common/fonts/museosanscyrl-100.svg')
+            format('svg'); /* Chrome < 4, Legacy iOS */
 }
-@supports (font-variation-settings: normal) {
-    html {
-        font-family: 'Inter var', sans-serif;
-    }
+
+@font-face {
+    font-family: 'MuseoSansCyrl-700';
+    src: url('./common/fonts/museosanscyrl-700.eot'); /* IE 9 Compatibility Mode */
+    src: url('./common/fonts/museosanscyrl-700.eot?#iefix')
+            format('embedded-opentype'),
+        /* IE < 9 */ url('./common/fonts/museosanscyrl-700.woff2')
+            format('woff2'),
+        /* Super Modern Browsers */ url('./common/fonts/museosanscyrl-700.woff')
+            format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+            url('./common/fonts/museosanscyrl-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+            url('./common/fonts/museosanscyrl-700.svg#museosanscyrl-700')
+            format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
 body {

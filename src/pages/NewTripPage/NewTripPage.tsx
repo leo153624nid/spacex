@@ -3,6 +3,7 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Header from '../../components/Header/Header'
 import StartButton from '../../components/StartButton/StartButton'
 import { useAppSelector } from '../../store/hooks/hooks'
 import s from './NewTripPage.module.scss'
@@ -17,13 +18,14 @@ function NewTrip() {
 
     return data ? (
         <div className={s.homePage}>
-            NEW TRIP
+            <Header />
             <StartButton mode="home" onClick={goHome}>
                 Закончить путешествие
             </StartButton>
         </div>
     ) : (
         <div className={s.homePage}>
+            <Header />
             <div className={s.loading}>
                 <span>LOADING...</span>
             </div>
