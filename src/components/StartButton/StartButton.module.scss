@@ -8,24 +8,21 @@
     left: 10vw;
     top: 30vh;
 
-    background-color: rgba($color: #000000, $alpha: 0.25);
+    background-color: rgba($color: #000000, $alpha: 0.1);
 }
 
 .button_newTrip {
-    // border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
-    // border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
     border-image: url(../../img/button-border.png) 34% / 20px round;
 }
 
 .button_newTrip:hover {
-    // background-color: rgba(210, 25, 25, 0.5);
+    color: rgb(76, 36, 255);
 }
 
 .button_home {
-    // border: 1px solid rgba(210, 102, 25, 0.5);
-    // background-color: #d27c19;
+    border-image: url(../../img/button-border.png) 34% / 20px round;
 }
 
 .button_home:hover {
-    // background-color: rgba(210, 102, 25, 0.5);
+    color: rgb(247, 163, 7);
 }
