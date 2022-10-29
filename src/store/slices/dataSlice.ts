@@ -8,13 +8,6 @@ export interface InitState {
     duration: number | null
 }
 
-// const initialState: InitState = {
-//     order: 1,
-//     garant: '25%',
-//     year: '2122г.',
-//     duration: 597,
-// }
-
 const initialState: InitState = {
     order: null,
     garant: null,
