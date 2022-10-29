@@ -3,88 +3,118 @@
 .card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    padding: 0px;
-    gap: 8px;
-
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 244px;
+    height: 100%;
+
+    border: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 1);
 
     &:hover {
-        animation: anim-shadow 0.4s ease-in-out forwards;
         cursor: pointer;
     }
 }
 
-@keyframes anim-shadow {
+.card_order {
+    background: linear-gradient(
+        -45deg,
+        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        transparent 100px
+    );
+    &:hover {
+        animation: anim-shadow-top-left 0.4s ease-in-out forwards;
+        border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-right: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+    }
+}
+
+@keyframes anim-shadow-top-left {
     to {
-        box-shadow: inset 0px 0px 70px 25px #6366f1;
-        border-radius: 6px;
+        box-shadow: inset -20px -20px 100px -50px rgba($color:
+                    rgb(125, 125, 125), $alpha: 0.5);
     }
 }
 
-.img {
-    width: 431.33px;
-    height: 216px;
+.card_garant {
+    background: linear-gradient(
+        45deg,
+        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        transparent 100px
+    );
+    &:hover {
+        animation: anim-shadow-top-right 0.4s ease-in-out forwards;
+        border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-left: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+    }
+}
 
-    border-radius: 8px;
+@keyframes anim-shadow-top-right {
+    to {
+        box-shadow: inset 20px -20px 100px -50px
+            rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    }
+}
 
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
+.card_year {
+    background: linear-gradient(
+        225deg,
+        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        transparent 100px
+    );
+    &:hover {
+        animation: anim-shadow-bottom-left 0.4s ease-in-out forwards;
+        border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-right: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+    }
+}
+
+@keyframes anim-shadow-bottom-left {
+    to {
+        box-shadow: inset -20px 20px 100px -50px
+            rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    }
+}
+
+.card_duration {
+    background: linear-gradient(
+        135deg,
+        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        transparent 100px
+    );
+    &:hover {
+        animation: anim-shadow-bottom-right 0.4s ease-in-out forwards;
+        border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-left: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+    }
+}
+
+@keyframes anim-shadow-bottom-right {
+    to {
+        box-shadow: inset 20px 20px 100px -50px rgba($color: rgb(125, 125, 125), $alpha:
+                    0.5);
+    }
+}
+
+.lowText {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
     @media (max-width: 550px) {
-        width: 331.33px;
+        font-size: 10px;
     }
 }
 
-.details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px 0px 0px 5px;
-
-    // width: 431.33px;
-    height: 20px;
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.tittle {
-    // width: 431.33px;
-    height: 20px;
-
+.highText {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 34px;
     line-height: 20px;
-    color: $color_grey900;
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.supportText {
-    display: none;
-    width: 164px;
-    height: 20px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #6b7280;
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+    color: white;
+    @media (max-width: 550px) {
+        font-size: 30px;
+    }
 }
