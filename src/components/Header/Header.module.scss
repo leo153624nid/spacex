@@ -7,9 +7,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
-    border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
-    background-color: rgba($color: #000000, $alpha: 0.25);
+    border-top: 1px solid rgba(rgb(125, 125, 125), 0.5);
+    border-bottom: 1px solid rgba(rgb(125, 125, 125), 0.5);
+    background-color: rgba(#000000, 0.25);
 }
 
 .header_container {
@@ -26,8 +26,8 @@
     height: 100%;
     border-image: url(../../img/logo-border.png) 34% / 20px round;
 
-    border-left: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
-    border-right: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    border-left: 1px solid rgba(rgb(125, 125, 125), 0.5);
+    border-right: 1px solid rgba(rgb(125, 125, 125), 0.5);
 
     img {
         width: 90%;
