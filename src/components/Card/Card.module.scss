@@ -16,102 +16,111 @@
 .card_order {
     background: linear-gradient(
         -45deg,
-        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        rgba(rgb(125, 125, 125), 0.5),
         transparent 100px
     );
     &:hover {
         animation: anim-shadow-top-left 0.4s ease-in-out forwards;
-        border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
-        border-right: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-bottom: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        border-right: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        p {
+            color: white;
+        }
     }
 }
 
 @keyframes anim-shadow-top-left {
     to {
-        box-shadow: inset -20px -20px 100px -50px rgba($color:
-                    rgb(125, 125, 125), $alpha: 0.5);
+        box-shadow: inset -20px -20px 100px -50px rgba(rgb(125, 125, 125), 0.5);
     }
 }
 
 .card_garant {
     background: linear-gradient(
         45deg,
-        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        rgba(rgb(125, 125, 125), 0.5),
         transparent 100px
     );
     &:hover {
         animation: anim-shadow-top-right 0.4s ease-in-out forwards;
-        border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
-        border-left: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-bottom: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        border-left: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        p {
+            color: white;
+        }
     }
 }
 
 @keyframes anim-shadow-top-right {
     to {
-        box-shadow: inset 20px -20px 100px -50px
-            rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+        box-shadow: inset 20px -20px 100px -50px rgba(rgb(125, 125, 125), 0.5);
     }
 }
 
 .card_year {
     background: linear-gradient(
         225deg,
-        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        rgba(rgb(125, 125, 125), 0.5),
         transparent 100px
     );
     &:hover {
         animation: anim-shadow-bottom-left 0.4s ease-in-out forwards;
-        border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
-        border-right: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-top: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        border-right: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        p {
+            color: white;
+        }
     }
 }
 
 @keyframes anim-shadow-bottom-left {
     to {
-        box-shadow: inset -20px 20px 100px -50px
-            rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+        box-shadow: inset -20px 20px 100px -50px rgba(rgb(125, 125, 125), 0.5);
     }
 }
 
 .card_duration {
     background: linear-gradient(
         135deg,
-        rgba($color: rgb(125, 125, 125), $alpha: 0.5),
+        rgba(rgb(125, 125, 125), 0.5),
         transparent 100px
     );
     &:hover {
         animation: anim-shadow-bottom-right 0.4s ease-in-out forwards;
-        border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
-        border-left: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.2);
+        border-top: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        border-left: 1px solid rgba(rgb(125, 125, 125), 0.2);
+        p {
+            color: white;
+        }
     }
 }
 
 @keyframes anim-shadow-bottom-right {
     to {
-        box-shadow: inset 20px 20px 100px -50px rgba($color: rgb(125, 125, 125), $alpha:
-                    0.5);
+        box-shadow: inset 20px 20px 100px -50px rgba(rgb(125, 125, 125), 0.5);
     }
 }
 
 .lowText {
-    font-family: 'Inter';
+    font-family: 'MuseoSansCyrl-100';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
-    color: white;
+    color: rgb(125, 125, 125);
     @media (max-width: 550px) {
         font-size: 10px;
     }
 }
 
 .highText {
-    font-family: 'Inter';
+    font-family: 'MuseoSansCyrl-700';
     font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 20px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
     color: white;
+    margin: 0 auto;
     @media (max-width: 550px) {
         font-size: 30px;
     }
