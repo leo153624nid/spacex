@@ -20,7 +20,7 @@ function NewTrip() {
         <div className={s.homePage}>
             <Header />
             <StartButton mode="home" onClick={goHome}>
-                Закончить путешествие
+                End Trip
             </StartButton>
         </div>
     ) : (
