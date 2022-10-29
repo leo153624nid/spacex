@@ -1,9 +1,14 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import s from './Header.module.scss'
 import logo from '../../img/spacex-logo.png'
+import Ref from '../Ref/Ref'
 
 function Header() {
+    const navigate = useNavigate()
     return (
         <header className={s.header}>
             <div className={s.header_container}>
@@ -12,29 +17,29 @@ function Header() {
                 </div>
 
                 <div className={s.content}>
-                    <div className={s.text}>
-                        <span>Главная</span>
-                    </div>
+                    <Ref onClick={() => navigate('/', { replace: true })}>
+                        Главная
+                    </Ref>
 
-                    <div className={s.text}>
-                        <span>Технология</span>
-                    </div>
+                    <Ref onClick={() => navigate('/', { replace: true })}>
+                        Технология
+                    </Ref>
 
-                    <div className={s.text}>
-                        <span>График полетов</span>
-                    </div>
+                    <Ref onClick={() => navigate('/', { replace: true })}>
+                        График полетов
+                    </Ref>
 
-                    <div className={s.text}>
-                        <span>Гарантии</span>
-                    </div>
+                    <Ref onClick={() => navigate('/', { replace: true })}>
+                        Гарантии
+                    </Ref>
 
-                    <div className={s.text}>
-                        <span>О компании</span>
-                    </div>
+                    <Ref onClick={() => navigate('/', { replace: true })}>
+                        О компании
+                    </Ref>
 
-                    <div className={s.text}>
-                        <span>Контакты</span>
-                    </div>
+                    <Ref onClick={() => navigate('/', { replace: true })}>
+                        Контакты
+                    </Ref>
                 </div>
             </div>
         </header>
