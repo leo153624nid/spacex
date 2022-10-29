@@ -7,7 +7,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
     background-color: rgba($color: #000000, $alpha: 0.25);
 }
 
@@ -23,22 +24,16 @@
 .logo {
     width: 30%;
     height: 100%;
-    border-image: url(../../img/line.png) 34% / 20px round;
+    border-image: url(../../img/logo-border.png) 34% / 20px round;
 
     border-left: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
     border-right: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
-
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
 
     img {
         width: 90%;
         position: relative;
         bottom: 5px;
         left: 5%;
-
         height: 100%;
         object-fit: contain;
     }
