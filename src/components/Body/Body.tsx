@@ -22,7 +22,6 @@ function Body({ order, garant, year, duration }: BodyProps) {
     return (
         <div className={s.body}>
             <div className={s.sideLeft}>
-                sideLeft
                 <StartButton mode="newTrip" onClick={startTrip}>
                     Начать путешествие
                 </StartButton>
