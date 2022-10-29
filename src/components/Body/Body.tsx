@@ -28,20 +28,22 @@ function Body({ order, garant, year, duration }: BodyProps) {
             </section>
 
             <section className={s.sideRight}>
-                <div className={s.card}>
-                    <Card mode="order" data={order} />
-                </div>
+                <div className={s.cards_container}>
+                    <div className={s.card}>
+                        <Card mode="order" data={order} />
+                    </div>
 
-                <div className={s.card}>
-                    <Card mode="garant" data={garant} />
-                </div>
+                    <div className={s.card}>
+                        <Card mode="garant" data={garant} />
+                    </div>
 
-                <div className={s.card}>
-                    <Card mode="year" data={year} />
-                </div>
+                    <div className={s.card}>
+                        <Card mode="year" data={year} />
+                    </div>
 
-                <div className={s.card}>
-                    <Card mode="duration" data={duration} />
+                    <div className={s.card}>
+                        <Card mode="duration" data={duration} />
+                    </div>
                 </div>
             </section>
         </div>
