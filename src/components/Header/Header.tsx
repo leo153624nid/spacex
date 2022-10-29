@@ -6,8 +6,8 @@ import logo from '../../img/spacex-logo.png'
 function Header() {
     return (
         <header className={s.header}>
-            <div className={s.banner}>
-                <img src={logo} alt="banner" />
+            <div className={s.logo}>
+                <img src={logo} alt="logo" />
             </div>
 
             <div className={s.content}>
