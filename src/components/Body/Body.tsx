@@ -10,7 +10,7 @@ import s from './Body.module.scss'
 interface BodyProps {
     order: number | null
     garant: string | null
-    year: number | null
+    year: string | null
     duration: number | null
 }
 
@@ -23,7 +23,7 @@ function Body({ order, garant, year, duration }: BodyProps) {
         <div className={s.body_container}>
             <section className={s.sideLeft}>
                 <StartButton mode="newTrip" onClick={startTrip}>
-                    Начать путешествие
+                    <span>Начать путешествие</span>
                 </StartButton>
             </section>
 
