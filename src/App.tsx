@@ -22,10 +22,10 @@ function App() {
             .then((data: InitState) => {
                 dispatch(
                     setData({
-                        order: data.order,
-                        garant: data.garant,
-                        year: data.year,
-                        duration: data.duration,
+                        order: data?.order,
+                        garant: data?.garant,
+                        year: data?.year,
+                        duration: data?.duration,
                     })
                 )
             })
