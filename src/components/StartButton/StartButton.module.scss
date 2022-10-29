@@ -1,43 +1,31 @@
 .button {
-    width: 100px;
-    border-radius: 5px;
+    width: 200px;
     padding: 8px 20px;
     cursor: pointer;
     color: white;
+
+    position: relative;
+    left: 10vw;
+    top: 30vh;
+
+    background-color: rgba($color: #000000, $alpha: 0.25);
 }
 
-.button_red {
-    border: 1px solid rgba(210, 25, 25, 0.5);
-    background-color: #d21919;
+.button_newTrip {
+    // border-top: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    // border-bottom: 1px solid rgba($color: rgb(125, 125, 125), $alpha: 0.5);
+    border-image: url(../../img/button-border.png) 34% / 20px round;
 }
 
-.button_red:hover {
-    background-color: rgba(210, 25, 25, 0.5);
+.button_newTrip:hover {
+    // background-color: rgba(210, 25, 25, 0.5);
 }
 
-.button_orange {
-    border: 1px solid rgba(210, 102, 25, 0.5);
-    background-color: #d27c19;
+.button_home {
+    // border: 1px solid rgba(210, 102, 25, 0.5);
+    // background-color: #d27c19;
 }
 
-.button_orange:hover {
-    background-color: rgba(210, 102, 25, 0.5);
-}
-
-.button_blue {
-    border: 1px solid rgba(25, 118, 210, 0.5);
-    background-color: #1976c2;
-}
-
-.button_blue:hover {
-    background-color: rgba(25, 118, 210, 0.5);
-}
-
-.button_green {
-    border: 1px solid rgba(31, 210, 25, 0.5);
-    background-color: #5dc219;
-}
-
-.button_green:hover {
-    background-color: rgba(31, 210, 25, 0.5);
+.button_home:hover {
+    // background-color: rgba(210, 102, 25, 0.5);
 }
