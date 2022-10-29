@@ -4,14 +4,14 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 export interface InitState {
     order: number | null
     garant: string | null
-    year: number | null
+    year: string | null
     duration: number | null
 }
 
 const initialState: InitState = {
     order: 1,
     garant: '25%',
-    year: 2122,
+    year: '2122г.',
     duration: 597,
 }
 
