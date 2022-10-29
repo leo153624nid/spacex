@@ -20,19 +20,30 @@ function Body({ order, garant, year, duration }: BodyProps) {
         navigate('/newtrip', { replace: true })
     }
     return (
-        <div className={s.body}>
-            <div className={s.sideLeft}>
+        <div className={s.body_container}>
+            <section className={s.sideLeft}>
                 <StartButton mode="newTrip" onClick={startTrip}>
                     Начать путешествие
                 </StartButton>
-            </div>
+            </section>
 
-            <div className={s.sideRight}>
-                <Card mode="order" data={order} />
-                <Card mode="garant" data={garant} />
-                <Card mode="year" data={year} />
-                <Card mode="duration" data={duration} />
-            </div>
+            <section className={s.sideRight}>
+                <div className={s.card}>
+                    <Card mode="order" data={order} />
+                </div>
+
+                <div className={s.card}>
+                    <Card mode="garant" data={garant} />
+                </div>
+
+                <div className={s.card}>
+                    <Card mode="year" data={year} />
+                </div>
+
+                <div className={s.card}>
+                    <Card mode="duration" data={duration} />
+                </div>
+            </section>
         </div>
     )
 }
