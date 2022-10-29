@@ -18,9 +18,9 @@ function Card({ mode, data }: CardProps) {
 
     return (
         <div className={className}>
-            <p>{cardContex?.textOver}</p>
-            <p>{data}</p>
-            <p>{cardContex?.textUnder}</p>
+            <p className={s.lowText}>{cardContex?.textOver}</p>
+            <p className={s.highText}>{data}</p>
+            <p className={s.lowText}>{cardContex?.textUnder}</p>
         </div>
     )
 }
