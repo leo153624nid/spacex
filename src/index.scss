@@ -41,9 +41,19 @@ body {
     background-size: cover;
     background-position: top center;
     box-sizing: border-box;
-    @media (max-width: 1600px) {
+    @media (max-width: 1670px) {
         background: url(./img/background1670.jpg) no-repeat;
         background-size: cover;
         background-position: top center;
+    }
+    @media (max-width: 1230px) {
+        background: url(./img/background1230.jpg) no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+    @media (max-width: 1160px) {
+        background: url(./img/background1160.jpg) no-repeat;
+        background-size: cover;
+        background-position: top left;
     }
 }

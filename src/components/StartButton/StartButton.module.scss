@@ -23,6 +23,11 @@
         border-image: url(../../img/button-border-orange.png) 40% 40% / 6px
             round;
     }
+
+    @media (max-width: 1100px) {
+        position: inherit;
+        margin-top: 5vh;
+    }
 }
 
 .button_home {
