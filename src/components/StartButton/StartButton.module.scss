@@ -40,4 +40,9 @@
         color: rgb(247, 163, 7);
         border-image: url(../../img/button-border-blue.png) 40% 40% / 6px round;
     }
+
+    @media (max-width: 1100px) {
+        position: inherit;
+        margin-top: 5vh;
+    }
 }
