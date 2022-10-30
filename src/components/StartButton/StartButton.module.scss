@@ -28,7 +28,8 @@
 .button_home {
     border-image: url(../../img/button-border-orange.png) 40% 40% / 6px round;
     position: relative;
-    top: 10vh;
+    top: 5vh;
+    left: 25vw;
 
     &:hover {
         color: rgb(247, 163, 7);
