@@ -27,7 +27,7 @@ function NewTrip() {
         <div className={s.homePage}>
             <Header />
             <div className={s.loading}>
-                <span>LOADING...</span>
+                <span>LOADING DATA...</span>
             </div>
         </div>
     )
