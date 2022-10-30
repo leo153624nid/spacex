@@ -5,6 +5,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import s from './Header.module.scss'
 import logo from '../../img/spacex-logo.png'
+import burger from '../../img/burger.png'
 import Ref from '../Ref/Ref'
 
 function Header() {
@@ -40,6 +41,10 @@ function Header() {
                     <Ref onClick={() => navigate('/', { replace: true })}>
                         Контакты
                     </Ref>
+                </div>
+
+                <div className={s.header_burger}>
+                    <img src={burger} alt="burger" />
                 </div>
             </div>
         </header>
