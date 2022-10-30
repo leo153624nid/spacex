@@ -13,22 +13,25 @@
 }
 
 .button_newTrip {
-    border-image: url(../../img/button-border.png) 34% / 20px round;
+    border-image: url(../../img/button-border-blue.png) 40% 40% / 6px round;
     position: relative;
     left: 10vw;
     top: 40vh;
 
     &:hover {
-        color: rgb(76, 36, 255);
+        color: rgb(17, 111, 252);
+        border-image: url(../../img/button-border-orange.png) 40% 40% / 6px
+            round;
     }
 }
 
 .button_home {
-    border-image: url(../../img/button-border.png) 34% / 20px round;
+    border-image: url(../../img/button-border-orange.png) 40% 40% / 6px round;
     position: relative;
     top: 10vh;
 
     &:hover {
         color: rgb(247, 163, 7);
+        border-image: url(../../img/button-border-blue.png) 40% 40% / 6px round;
     }
 }
